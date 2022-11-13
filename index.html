@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2 class="welcome">Login to get started</h2>
+        <form class="login">
+            <input type="text" placeholder="user" class="user">
+            <input type="password"  placeholder="PIN" maxlength="4" class="pass" required>
+            <button class="login__btn"><i class="fas fa-arrow-right"></i></button>
+        </form>
+    </header>
+    <section class="container">
+        <div class="left">
+            <h4 class="bal">Current Balance</h4>
+            <p>As of <span class="date"> 3/10/2022, 18:37</span></p>
+            <div class="all">
+                <div class="history withdraw">
+                    <p><span class="withDepo withDraw">2 Withdraw</span> 
+                        12/8/2022<span class="balAmo">1330€</span></p>
+                </div>
+                <div class="history deposit">
+                    <p><span class="withDepo">2 Deposit</span> 12/8/2022  
+                        <span class="balAmo">1330€</span></p>
+                </div>
+                
+            </div>
+            <p class="cap">IN <span class="withFooter summary__value--in">0000€</span> Out <span class="withFooter withR summary__value--out">
+                0000€</span> Interest <span class="withFooter summary__value--interest">000€</span>
+                sort <button class="btn--sort">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </p>
+        </div>
+        <div class="right">
+            <p class="balNum">0000€</p>
+            <div class="all-process">
+                <div class="money transfer">
+                    <h3>Transfer Money</h3>
+                    <form>
+                     <input type="text" class="amount amount-width"
+                     id="form__input--to">
+                     <input type="text" class="amount amount-to amount-width" id="form__input--amount">
+                     <button class="amount amount-btn"><i class="fas fa-arrow-right"></i></button>
+                     <label class="transfer-detail">Transfer To</label>
+                     <label class="transfer-detail transfer-detail-amount">Amount</label>
+                    </form>
+                 </div>
+                 <div class="money request">
+                    <h3>Request Money</h3>
+                    <form>
+                     <input type="text" class="reqAmo amount-width" id="form__input--loan-amount">
+                     <button class="reqAmo reqAmo-btn"><i class="fas fa-arrow-right"></i></button>
+                     <label class="reqAmo reqAmo-detail">Amount</label>
+                    </form>
+                 </div>
+                 <div class="money close-acc">
+                    <h3>Close Account</h3>
+                    <form>
+                     <input type="text" class="userName amount-width "
+                     id="form__input--user">
+                     <input type="text" class="userName userName-pass amount-width "
+                     id="form__input--pin">
+                     <button class="userName userName-btn"><i class="fas fa-arrow-right"></i></button>
+                     <label class="autontication">User</label>
+                     <label class="autontication autontication-pass">Password</label>
+                    </form>
+                 </div>
+            </div> 
+            <p class="timeing">You will be logged out in <span class="time">09:03</span></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

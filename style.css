@@ -1,0 +1,269 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap"); */
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e0e0e0;
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  font-family: inherit;
+}
+.user,.pass{
+  width: 6rem;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0;
+  text-align: center;
+}
+.user,.pass:focus{
+  outline: none;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  opacity: 0;
+}
+.left{
+  position: absolute;
+  left: 10%;
+  width: 40%;
+  height: 100vh;
+}
+.right{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+}
+.bal{
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.all{
+  border-radius: 0.25rem;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  height: 24.4rem;
+  overflow-y: scroll;
+}
+.balNum{
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+ .history{
+  margin-right: 0.75rem;
+  margin-left:0.75rem;
+  padding: 1.4rem 1rem;
+  border-bottom: 1px solid gray;
+}
+button{
+  cursor: pointer;
+  border: 0;
+  background: #fff; 
+  font-size: 16px;
+  padding: 0.2rem;
+  padding-bottom: 0;
+}
+
+.withDepo{
+  background-color: rgb(14, 168, 14);
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+}
+.withDraw{
+  background-color: rgb(136, 19, 19);
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+} 
+.withFooter{
+  color: rgb(14, 168, 14);
+  font-size: 1.5rem;
+}
+.withFooter.withR{
+  color: rgb(136, 18, 14);
+}
+.balAmo{
+  float: right;
+}
+.all-process{
+  margin-top: 1.8rem;
+  height: 63%;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  overflow: hidden;
+  padding-bottom: 0.7rem;
+}
+
+.money{
+  padding: 2.5rem;
+  height: 11%;
+}
+.money.transfer{
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  display: flex;
+  position: relative;
+  border-radius: .5rem;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+.money.transfer h3{
+  position: absolute;
+  top: 15%;
+}
+.amount{
+  position: absolute;
+  top: 45%;
+  overflow: hidden;
+}
+.amount.amount-to{
+  left: 50%;
+}
+.amount.amount-btn{
+  right: 5%;
+}
+.transfer-detail{
+  position: absolute;
+  top: 70%;
+}
+.transfer-detail.transfer-detail-amount{
+  left: 55%;
+}
+.money.request{
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  display: flex;
+  position: relative;
+  border-radius: .5rem;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+.money.request h3{
+  position: absolute;
+  top: 15%;
+}
+.reqAmo{
+  position: absolute;
+  top: 45%;
+  
+}
+#form__input--loan-amount{
+  border-color: #fff;
+  padding-bottom: 0.15rem;
+  padding-top: 0.15rem;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  opacity: 0.7;
+}
+.reqAmo-btn{
+  position: absolute;
+  left: 55%;
+}
+.reqAmo-detail{
+  top: 70%;
+}
+.money.close-acc{
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  display: flex;
+  position: relative;
+  border-radius: .5rem;
+  width: 60%;
+}
+.money.close-acc h3{
+  position: absolute;
+  top: 15%;
+}
+
+.money.close-acc .userName{
+position: absolute;
+top: 45%;
+}
+.userName-pass{
+position: absolute;
+left: 50%;
+}
+.userName-btn{
+  position: absolute;
+  right: 5%;
+}
+.autontication{
+  position: absolute;
+top: 70%;
+}
+.autontication-pass{
+  left: 55%;
+}
+/* input{
+  border-color: #fff;
+  padding-bottom: 0.15rem;
+  padding-top: 0.15rem;
+  background: inherit;
+  opacity: 0.7;
+} */
+input:focus{
+  outline: none;
+}
+#amount{
+  width: auto;
+}
+.timeing{
+  margin-top: 1rem;
+  float: right;
+  width: 60%;
+  margin-right: 2.2rem;
+}
+.amount-width{
+  border-radius: 5px;
+}
+.cap{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#form__input--amount,#form__input--to{
+background-color: #e0c246;
+}
+
+
+#form__input--user,#form__input--pin{
+background-color: #fd424b;
+}
+
+@media(max-width: 1193px){
+  .amount-width{
+    width: 4rem;
+  }
+}
+
