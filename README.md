@@ -1,4 +1,4 @@
-# Banklist-Simple-ATM-UI
+# Banklist-Simple-ATM
 # Live-Server https://minilik94.github.io/Banklist-Simple-ATM-UI/
 #User Name and PIN
 * js | 1111
